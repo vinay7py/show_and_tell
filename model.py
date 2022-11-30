@@ -62,5 +62,5 @@ class CNNtoRNN(nn.Module):
 
                 if vocabulary.itos[predicted.item()] == "<EOS>":
                     break
-
+                    
         return [vocabulary.itos[idx] for idx in result_caption]
